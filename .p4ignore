@@ -1,0 +1,25 @@
+# IGNORED FILES
+*.class
+local.properties
+gradle-app.setting
+
+#BUILD FOLDERS
+build
+app
+fakeplayer
+vudu
+.gwt
+.pmd
+
+#.GRADLE FOLDERS
+.gradle
+
+#ECLIPSE FILES AND FOLDERS
+.settings
+.project
+.classpath
+.factorypath
+.
+#IDEA FILES AND FOLDERS
+.idea
+*.iml
