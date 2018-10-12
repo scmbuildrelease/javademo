@@ -49,6 +49,7 @@ uploadArchives {
              pom.version = "1.0-SNAPSHOT"
              pom.artifactId = "javademo"
              pom.groupId = "com.vudu"
+	     artifact someFile
        }
     }
 }
