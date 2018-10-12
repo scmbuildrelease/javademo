@@ -13,10 +13,10 @@ plugins {
 mainClassName = 'App'
 
 group 'com.vudu.javademo'
-version '0.1.2'
+version '0.1-SNAPSHOT'
 
 
-def jarFile = file('build/distributions/javademo-0.1.2.tar')
+def jarFile = file('build/distributions/javademo-0.1-SNAPSHOT.tar')
 
 artifacts { archives jarFile } 
 
@@ -44,10 +44,10 @@ uploadArchives {
     repositories {
 
        mavenDeployer {
-             repository(url: "http://localhost:8081/repository/maven-releases") {
+             repository(url: "http://localhost:8081/repository/maven-snapshots") {
              authentication(userName: "admin", password: "admin123")
 					}
-             pom.version = "0.1.2"
+             pom.version = "0.1-SNAPSHOT"
              pom.artifactId = "javademo"
              pom.groupId = "com.vudu"
 	      
