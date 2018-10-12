@@ -17,7 +17,10 @@ mainClassName = 'App'
 group 'com.vudu.javademo'
 version '0.1-SNAPSHOT'
 
-def jarFile = file('build/distributions/javademo.tar')  
+def jarFile = file('build/distributions/javademo.tar')
+
+artifacts { archives jarFile } 
+
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
