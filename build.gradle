@@ -16,6 +16,10 @@ group 'com.vudu.javademo'
 version '0.1-SNAPSHOT'
 
 
+def jarFile = file('build/distributions/javademo-0.1-SNAPSHOT.tar')
+
+artifacts { archives jarFile } 
+
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile 'com.google.guava:guava:23.0'
