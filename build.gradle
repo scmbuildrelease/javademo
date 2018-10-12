@@ -6,8 +6,7 @@ plugins {
     // Apply the application plugin to add support for building an application
     id 'application'
     
-    id 'maven-publish'
-    id 'maven'
+    id 'maven-publish' 
     
 }
 
