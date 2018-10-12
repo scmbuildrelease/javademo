@@ -16,7 +16,7 @@ group 'com.vudu.javademo'
 version '0.1-SNAPSHOT'
 
 
-def jarFile = file('build/distributions/javademo-0.1-SNAPSHOT.tar')
+def jarFile = file('build/distributions/javademo-0.1-SNAPSHOT.rpm')
 
 artifacts { archives jarFile } 
 
