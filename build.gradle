@@ -45,7 +45,7 @@ uploadArchives {
 
        mavenDeployer {
              repository(url: "http://localhost:8081/repository/maven-snapshots") {
-             authentication(userName: "admin", password: "admin123")
+             authentication(userName: "girl", password: "girlinmaven")
 					}
              pom.version = "0.1-SNAPSHOT"
              pom.artifactId = "javademo"
