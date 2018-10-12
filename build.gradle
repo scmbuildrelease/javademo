@@ -17,7 +17,7 @@ mainClassName = 'App'
 group 'com.vudu.javademo'
 version '0.1-SNAPSHOT'
 
-def jarFile = file('build/distributions/javademo.tar')
+def jarFile = file('build/distributions/javademo-0.1-SNAPSHOT.tar')
 
 artifacts { archives jarFile } 
 
