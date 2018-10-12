@@ -17,7 +17,11 @@ mainClassName = 'App'
 group 'com.vudu.javademo'
 version '0.1-SNAPSHOT'
 
-def someFile = file('build/distributions/javademo.tar')
+def jarFile = file('build/distributions/javademo.tar') 
+def jarArtifact = artifacts.add('archives', jarFile) {
+    type 'jar'
+    builtBy 'jar'
+}
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
@@ -49,7 +53,7 @@ uploadArchives {
              pom.version = "1.0-SNAPSHOT"
              pom.artifactId = "javademo"
              pom.groupId = "com.vudu"
-	     artifact someFile
+	     artifact jarArtifact
        }
     }
 }
